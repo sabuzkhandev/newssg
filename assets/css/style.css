@@ -817,41 +817,39 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Our Clients
+# Clients
 --------------------------------------------------------------*/
-.clients .swiper-pagination {
-  margin-top: 20px;
-  position: relative;
+.clients {
+  padding: 15px 0;
+  text-align: center;
 }
 
-.clients .swiper-pagination .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-  background-color: #fff;
-  opacity: 1;
-  border: 1px solid #991B62;
+.section-bg{
+  background-color: #f6f9fe;
 }
 
-.clients .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #991B62;
+.clients img {
+  max-width: 45%;
+  transition: all 0.4s ease-in-out;
+  display: inline-block;
+  padding: 15px 0;
 }
 
-.clients .swiper-slide img {
-  opacity: 0.5;
-  transition: 0.3s;
-  filter: grayscale(100);
+.clients img:hover {
+  transform: scale(1.15);
 }
 
-.clients .swiper-slide img:hover {
-  filter: none;
-  opacity: 1;
+@media (max-width: 768px) {
+  .clients img {
+    max-width: 40%;
+  }
 }
 
 /*--------------------------------------------------------------
 # Counts
 --------------------------------------------------------------*/
 .counts {
-  padding: 70px 0 60px;
+  padding: 70px 0 80px;
 }
 
 .counts .count-box {
